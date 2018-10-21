@@ -18,6 +18,21 @@ and open the template in the editor.
 			var_dump($e);
 		}
         //echo "Hello"
+        try{
+            $query=$db->prepare("select nume,prenume from angajati");
+            $query->execute();
+            $result= $query->fetchAll(PDO::FETCH_ASSOC);
+
+            //echo $result
+            echo '<pre>';
+            var_dump($result[0]); //afiseaza si tipul variabilei
+            echo '</pre>';
+
+            echo($result[0]["nume"]); //afiseaza variabila fara tipul ei
+        }catch(PDOException $e){
+
+
+        }
         ?>
     </body>
 </html>
