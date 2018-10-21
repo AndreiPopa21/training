@@ -12,7 +12,7 @@
           <?php for($i=0;$i<10;$i++){ ?>
             <h1>Primul meu titlu</h1>
           <?php } 
-          $variabila="Afara este frumos.";
+          $variabila="Am modificat php-ul";
           ?>
           <p> <?php echo $variabila; ?> </p>
     </body>
