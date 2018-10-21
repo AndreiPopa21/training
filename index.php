@@ -12,11 +12,12 @@ and open the template in the editor.
     <body>
         <?php
         try {
-			$db = new PDOEx("mysql:host=localhost;dbname=training", "root","nan587");
+			$db = new PDO("mysql:host=localhost;dbname=training", "root","andrei");
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		} catch (PDOException $e) {
 			var_dump($e);
 		}
+        //echo "Hello"
         ?>
     </body>
 </html>
